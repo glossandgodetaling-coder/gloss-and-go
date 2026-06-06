@@ -6,6 +6,15 @@
   <title>Gloss & Go Mobile Detailing | Metro Atlanta</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    @media (min-width: 768px) {
+      .hero-desktop { min-height: 100vh !important; }
+    }
+    @media (max-width: 767px) {
+      .work-grid { grid-template-columns: 1fr !important; }
+      .work-grid img { height: 300px !important; }
+    }
+  </style>
 </head>
 <body>
 
@@ -34,7 +43,7 @@
   </div>
 
   <!-- HERO -->
-  <section class="hero" style="position:relative;overflow:hidden;min-height:580px;display:flex;align-items:center;justify-content:center;padding:60px 40px;">
+  <section class="hero hero-desktop" style="position:relative;overflow:hidden;min-height:580px;display:flex;align-items:center;justify-content:center;padding:60px 40px;">
     <div style="position:absolute;inset:0;background-image:url('https://res.cloudinary.com/dkgjea1w1/image/upload/v1780739002/IMG_2117_1_oaylci.jpg');background-size:cover;background-position:center;filter:brightness(0.35);z-index:0;"></div>
     <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(8,17,31,0.3) 0%,rgba(8,17,31,0.7) 100%);z-index:1;"></div>
     <div class="hero-content" style="position:relative;z-index:2;text-align:center;max-width:680px;display:flex;flex-direction:column;align-items:center;">
@@ -196,7 +205,6 @@
       <h2 class="light">Maintenance Plans</h2>
       <p class="sub light">We come to you every month — no reminders, no hassle, just a clean car on schedule</p>
       <div class="membership-grid" style="justify-content:center;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
-
         <div class="mem-card">
           <div class="mem-header">
             <h3>Exterior Plan</h3>
@@ -215,7 +223,6 @@
           <p style="font-size:11px;color:#5a7a96;margin-bottom:12px;">Sedan $75 · Small SUV $95 · Van/Truck $115</p>
           <a href="#booking" class="btn btn-ghost">Book Online</a>
         </div>
-
         <div class="mem-card">
           <div class="mem-header">
             <h3>Interior Plan</h3>
@@ -234,7 +241,6 @@
           <p style="font-size:11px;color:#5a7a96;margin-bottom:12px;">Sedan $95 · Small SUV $115 · Van/Truck $135</p>
           <a href="#booking" class="btn btn-ghost">Book Online</a>
         </div>
-
         <div class="mem-card mem-featured">
           <div class="mem-badge">Best Value</div>
           <div class="mem-header">
@@ -255,7 +261,6 @@
           <p style="font-size:11px;color:#5a7a96;margin-bottom:12px;">Sedan $130 · Small SUV $160 · Van/Truck $190</p>
           <a href="#booking" class="btn btn-primary">Book Online</a>
         </div>
-
       </div>
     </div>
   </section>
@@ -266,16 +271,16 @@
       <p class="eyebrow light">Real Results</p>
       <h2 class="light">Our Work</h2>
       <p class="sub light">Every car we touch gets the full Gloss &amp; Go treatment</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:24px;margin-top:2rem;">
+      <div class="work-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:2rem;">
         <div style="border-radius:12px;overflow:hidden;border:1px solid rgba(0,200,248,0.15);">
-          <img src="https://res.cloudinary.com/dkgjea1w1/image/upload/v1780739002/IMG_2117_1_oaylci.jpg" alt="Finished exterior detail" style="width:100%;height:600px;object-fit:cover;object-position:center;display:block;" />
+          <img src="https://res.cloudinary.com/dkgjea1w1/image/upload/v1780739002/IMG_2117_1_oaylci.jpg" alt="Finished exterior detail" style="width:100%;height:500px;object-fit:cover;object-position:center;display:block;" />
           <div style="padding:16px 20px;background:#0d1525;">
             <p style="color:#00c8f8;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;">Exterior Detail — Finished</p>
             <p style="color:#8a9ab8;font-size:13px;margin-top:4px;">Ford Mustang GT — Full exterior hand wash, wax &amp; tire shine</p>
           </div>
         </div>
         <div style="border-radius:12px;overflow:hidden;border:1px solid rgba(0,200,248,0.15);">
-          <img src="https://res.cloudinary.com/dkgjea1w1/image/upload/v1780738874/IMG_2104_l4zyc7.jpg" alt="Finished interior detail" style="width:100%;height:600px;object-fit:cover;object-position:center;display:block;" />
+          <img src="https://res.cloudinary.com/dkgjea1w1/image/upload/v1780738874/IMG_2104_l4zyc7.jpg" alt="Finished interior detail" style="width:100%;height:500px;object-fit:cover;object-position:center;display:block;" />
           <div style="padding:16px 20px;background:#0d1525;">
             <p style="color:#00c8f8;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;">Interior Detail — Finished</p>
             <p style="color:#8a9ab8;font-size:13px;margin-top:4px;">Ford Mustang GT — Full interior vacuum, steam clean &amp; wipe down</p>
